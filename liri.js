@@ -8,7 +8,7 @@ var spotify = new Spotify(keys.spotify)
 var moment = require('moment')
 
 // concert this function
-if (process.arg[2] == 'concert-this') {
+if (process.argv[2] == 'concert-this') {
     var artist = process.argv.slice(3).join(" ")
     console.log(artist)
 
